@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentiment Analysis Chatbot</title>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sentiment Analysis Chatbot</h1>
+      <form id="sentiment-form" action="/predict" method="post">
+        <textarea id="text-input" name="text" placeholder="Enter text here..."></textarea>
+        <button type="submit">Predict Sentiment</button>
+      </form>
+      <div id="response"></div>
+      {{ response }}
+    </div>
+  </body>
+</html>
