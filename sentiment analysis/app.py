@@ -8,10 +8,9 @@ def home():
 
 
 
-@app.route('/predict', methods=['POST','GET'])
+@app.route('/predict', methods=['POST'])
 def predict():
-    if request.method=='GET':
-        return redirect(url_for("home"))
+   
     try:
         text = request.form['text']
         blob = TextBlob(text)
